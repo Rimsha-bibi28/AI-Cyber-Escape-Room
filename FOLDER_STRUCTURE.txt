@@ -1,0 +1,100 @@
+AI_Cyber_Escape_Room/
+│
+├── Final_Report/
+│   └── AI_Cyber_Escape_Room_Final_Report.docx
+│
+├── Datasets/
+│   ├── Phishing/
+│   │   ├── phishing_dataset.csv
+│   │   └── source.txt
+│   │
+│   ├── Password_Strength/
+│   │   ├── password_strength_dataset.csv
+│   │   └── source.txt
+│   │
+│   └── Dataset_Description.docx
+│
+├── Diagrams/
+│   ├── System_Architecture.png
+│   ├── Escape_Room_Workflow.png
+│   └── ML_Model_Flow.png
+│
+├── Presentation/
+│   └── AI_Cyber_Escape_Room_Presentation.pptx
+│
+├── References/
+│   └── Research_Papers_2018_2025.pdf   (optional)
+│
+└── README.md
+
+2️⃣ In Literature Review Table (Example Entry)
+Author & Year	Focus	Method	Findings	Gap
+Sahingoz et al. (2019)	Phishing URL detection	ML classifiers using URL features	High phishing detection accuracy	No gamified or AI-driven learning application
+
+AI_Cyber_Escape_Room.ipynb
+│
+├── Section 1: Import Libraries
+│
+├── Section 2: Phishing URL Detection
+│   ├── Load phishing_site_urls.csv
+│   ├── Train/Test split
+│   ├── Train model
+│   └── Evaluate accuracy
+│
+├── Section 3: Phishing Website Feature Detection
+│   ├── Load phishing-website-dataset.csv
+│   ├── Train/Test split
+│   ├── Train model
+│   └── Evaluate accuracy
+│
+├── Section 4: Password Strength Validation
+│   ├── Load password-strength-classifier-dataset.csv
+│   ├── Train/Test split
+│   ├── Train model
+│   └── Evaluate accuracy
+│
+└── Section 5: Summary of Results
+FOLDER STRUCTURE:
+C:\Users\Rimsh\Desktop\AI_ROOM
+│
+├── Datasets                    # Already exists
+│
+├── MODELS                      # Already exists (your .pkl files)
+│   ├── phishing_url_model.pkl
+│   ├── url_vectorizer.pkl
+│   ├── phishing_website_model.pkl
+│   ├── password_strength_model.pkl
+│   └── password_vectorizer.pkl
+│
+├── NOTEBOOK                    # Already exists
+│   └── AI_Cyber_Escape_Room.ipynb
+│
+├── Final_Report                # Already exists
+│   └── AI_Cyber_Escape_Room_Report.docx
+│
+├── WEB_APP                     # ⭐ CREATE THIS (NEW)
+│   │
+│   ├── app.py                  # Flask backend
+│   │
+│   ├── templates               # HTML files
+│   │   ├── index.html
+│   │   ├── level1_phishing.html
+│   │   ├── level2_website.html
+│   │   ├── level3_password.html
+│   │   └── success.html
+│   │
+│   ├── static
+│   │   ├── css
+│   │   │   └── style.css
+│   │   └── js
+│   │       └── game.js
+│   │
+│   └── README.md
+
+
+--MODEL NAMES
+"C:\Users\Rimsh\Desktop\AI_ROOM\MODELS\password_strength_model.pkl"
+"C:\Users\Rimsh\Desktop\AI_ROOM\MODELS\password_vectorizer.pkl"
+"C:\Users\Rimsh\Desktop\AI_ROOM\MODELS\phishing_url_model.pkl"
+"C:\Users\Rimsh\Desktop\AI_ROOM\MODELS\phishing_website_model.pkl"
+"C:\Users\Rimsh\Desktop\AI_ROOM\MODELS\url_vectorizer.pkl"

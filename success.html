@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Escape Successful</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Escape Successful!</h1>
+      <p>Congratulations, <strong>{{ username }}</strong>!</p>
+
+      <p id="finalScore"></p>
+      <p id="timeLeft"></p>
+
+      <div class="success-box">
+        <p>✔ AI-based Threat Detection</p>
+        <p>✔ Secure Decision Making</p>
+        <p>✔ Cybersecurity Awareness</p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("finalScore").innerText =
+        "⭐ Final Score: " + sessionStorage.getItem("score");
+
+      let time = sessionStorage.getItem("time");
+      let min = Math.floor(time / 60);
+      let sec = time % 60;
+      document.getElementById(
+        "timeLeft"
+      ).innerText = `⏳ Time Remaining: ${min}:${sec < 10 ? "0" : ""}${sec}`;
+
+      sessionStorage.clear();
+    </script>
+  </body>
+</html>

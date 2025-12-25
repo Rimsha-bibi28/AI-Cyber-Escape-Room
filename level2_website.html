@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Level 2 – Website Security Analysis</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hud">
+        <span>👤 {{ username }}</span>
+        <span id="score"></span>
+        <span id="timer"></span>
+      </div>
+
+      <h2>Level 2: Website Phishing Indicators</h2>
+      <p>Select the suspicious characteristics of a website.</p>
+
+      <label><input type="checkbox" /> No HTTPS</label><br />
+      <label><input type="checkbox" /> Shortened URL</label><br />
+      <label><input type="checkbox" /> Popup Windows</label><br />
+      <label><input type="checkbox" /> Unknown Domain Age</label><br />
+
+      <button onclick="checkWebsite()">Analyze Website</button>
+
+      <p id="result"></p>
+
+      <a href="/level3" id="next" class="btn hidden">Next Level</a>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+    <script>
+      document.getElementById("score").innerText =
+        "⭐ Score: " + sessionStorage.getItem("score");
+      startTimer();
+    </script>
+  </body>
+</html>

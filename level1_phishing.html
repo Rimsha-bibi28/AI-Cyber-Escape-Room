@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Level 1 – Phishing URL Detection</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hud">
+        <span>👤 {{ username }}</span>
+        <span id="score">⭐ Score: 0</span>
+        <span id="timer">⏳ Time</span>
+      </div>
+
+      <h2>Level 1: Identify a Phishing URL</h2>
+      <p>Enter a URL and check whether it is safe or malicious.</p>
+
+      <input type="text" id="url" placeholder="https://example.com" />
+      <button onclick="checkURL()">Check URL</button>
+
+      <p id="result"></p>
+
+      <a href="/level2" id="next" class="btn hidden">Next Level</a>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+    <script>
+      document.getElementById("score").innerText =
+        "⭐ Score: " + sessionStorage.getItem("score");
+      startTimer();
+    </script>
+  </body>
+</html>
